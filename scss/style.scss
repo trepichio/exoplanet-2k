@@ -69,6 +69,13 @@ article {
 	border: 2px groove #222; // TODO: review this border
 	padding: 1rem 3rem 5rem;
 
+	@media screen and (max-width: $res-mobile-L) {
+		width: 100%;
+		padding-left:  1.5rem;
+		padding-right: 1.5rem;
+	} 
+
+
 	h1.main-heading {
 		text-transform: uppercase;
 		text-align: center;
@@ -77,24 +84,39 @@ article {
 		margin: 0;
 		margin-bottom: 5rem;
 
-		/* @media screen and (max-width: 960px) {
-			font-size: 6rem;
-		}
-		@media screen and (max-width: 710px) {
+		@media screen and (max-width: $res-tablet) {
 			font-size: 5rem;
 		}
-		@media screen and (max-width: 610px) {
-			font-size: 5rem;
-		} */
+		@media screen and (max-width: $res-mobile-L) {
+			font-size: 2.5rem;
+			font-weight: bold;
+			margin-bottom: 2.5rem;
+		} 
 
 	}
 
 	time, #author, #footer {
 		font-size: 1rem;
+
+		@media screen and (max-width: $res-mobile-S) {
+			display: block;	
+			text-align: center;
+			float: none;
+			margin: 1rem;
+		} 
+
 	}
 
 	h1 {
 		font-size: 4rem;
+
+		@media screen and (max-width: $res-tablet) {
+			font-size: 3rem;
+		} 
+		@media screen and (max-width: $res-mobile-L) {
+			font-size: 2rem;
+		} 
+
 	}
 
 	p {

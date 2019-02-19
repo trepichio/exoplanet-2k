@@ -14,11 +14,11 @@ html {
     /* line 5, /home/jtrepichio/webDev/exoplanet-2k/scss/style.scss */
     html {
       font-size: 100%; } }
-  @media screen and (max-width: 1024px) {
+  @media screen and (min-width: 1024px) {
     /* line 5, /home/jtrepichio/webDev/exoplanet-2k/scss/style.scss */
     html {
       font-size: 80%; } }
-  @media screen and (max-width: 768px) {
+  @media screen and (min-width: 768px) {
     /* line 5, /home/jtrepichio/webDev/exoplanet-2k/scss/style.scss */
     html {
       font-size: 70%; } }
@@ -103,7 +103,13 @@ article {
   margin: 0 auto;
   border: 2px groove #222;
   padding: 1rem 3rem 5rem; }
-  /* line 72, /home/jtrepichio/webDev/exoplanet-2k/scss/style.scss */
+  @media screen and (max-width: 425px) {
+    /* line 65, /home/jtrepichio/webDev/exoplanet-2k/scss/style.scss */
+    article {
+      width: 100%;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem; } }
+  /* line 79, /home/jtrepichio/webDev/exoplanet-2k/scss/style.scss */
   article h1.main-heading {
     text-transform: uppercase;
     text-align: center;
@@ -111,22 +117,47 @@ article {
     font-weight: normal;
     margin: 0;
     margin-bottom: 5rem; }
-  /* line 81, /home/jtrepichio/webDev/exoplanet-2k/scss/style.scss */
+    @media screen and (max-width: 768px) {
+      /* line 79, /home/jtrepichio/webDev/exoplanet-2k/scss/style.scss */
+      article h1.main-heading {
+        font-size: 5rem; } }
+    @media screen and (max-width: 425px) {
+      /* line 79, /home/jtrepichio/webDev/exoplanet-2k/scss/style.scss */
+      article h1.main-heading {
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-bottom: 2.5rem; } }
+  /* line 98, /home/jtrepichio/webDev/exoplanet-2k/scss/style.scss */
   article time, article #author, article #footer {
     font-size: 1rem; }
-  /* line 85, /home/jtrepichio/webDev/exoplanet-2k/scss/style.scss */
+    @media screen and (max-width: 320px) {
+      /* line 98, /home/jtrepichio/webDev/exoplanet-2k/scss/style.scss */
+      article time, article #author, article #footer {
+        display: block;
+        text-align: center;
+        float: none;
+        margin: 1rem; } }
+  /* line 110, /home/jtrepichio/webDev/exoplanet-2k/scss/style.scss */
   article h1 {
     font-size: 4rem; }
-  /* line 89, /home/jtrepichio/webDev/exoplanet-2k/scss/style.scss */
+    @media screen and (max-width: 768px) {
+      /* line 110, /home/jtrepichio/webDev/exoplanet-2k/scss/style.scss */
+      article h1 {
+        font-size: 3rem; } }
+    @media screen and (max-width: 425px) {
+      /* line 110, /home/jtrepichio/webDev/exoplanet-2k/scss/style.scss */
+      article h1 {
+        font-size: 2rem; } }
+  /* line 122, /home/jtrepichio/webDev/exoplanet-2k/scss/style.scss */
   article p {
     line-height: 1.5; }
-  /* line 93, /home/jtrepichio/webDev/exoplanet-2k/scss/style.scss */
+  /* line 126, /home/jtrepichio/webDev/exoplanet-2k/scss/style.scss */
   article ul {
     line-height: 1.5; }
-  /* line 97, /home/jtrepichio/webDev/exoplanet-2k/scss/style.scss */
+  /* line 130, /home/jtrepichio/webDev/exoplanet-2k/scss/style.scss */
   article img {
     width: 100%; }
-    /* line 100, /home/jtrepichio/webDev/exoplanet-2k/scss/style.scss */
+    /* line 133, /home/jtrepichio/webDev/exoplanet-2k/scss/style.scss */
     article img.circular {
       width: 50%;
       border-radius: 50%;
