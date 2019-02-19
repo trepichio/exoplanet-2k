@@ -7,6 +7,19 @@ html {
 	font-size: 62.5%;
 	margin: 0;
 	padding: 0;
+
+	@media screen and (min-width: $res-4k) {
+		font-size: 200%;
+	}
+	@media screen and (min-width: $res-laptop-L) {
+		font-size: 100%;
+	}
+	@media screen and (max-width: $res-laptop) {
+		font-size: 80%;
+	}
+	@media screen and (max-width: $res-tablet) {
+		font-size: 70%;
+	}
 }
 
 *, *::before, *::after {
@@ -66,7 +79,7 @@ article {
 	}
 
 	time, #author, #footer {
-		font-size: small;
+		font-size: 1rem;
 	}
 
 	h1 {
@@ -88,6 +101,7 @@ article {
 			width: 50%;
 			border-radius: 50%;
 			border: 6px solid #000;
+			margin-left: 10rem;
 		}
 	}
 
