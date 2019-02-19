@@ -168,6 +168,6 @@ article {
         /* line 134, /home/jtrepichio/webDev/exoplanet-2k/scss/style.scss */
         article img.circular {
           display: block;
-          width: 100%;
+          width: 80%;
           margin: 2rem auto;
           float: none; } }
