@@ -14,10 +14,10 @@ html {
 	@media screen and (min-width: $res-laptop-L) {
 		font-size: 100%;
 	}
-	@media screen and (max-width: $res-laptop) {
+	@media screen and (min-width: $res-laptop) {
 		font-size: 80%;
 	}
-	@media screen and (max-width: $res-tablet) {
+	@media screen and (min-width: $res-tablet) {
 		font-size: 70%;
 	}
 }
@@ -76,6 +76,17 @@ article {
 		font-weight: normal;
 		margin: 0;
 		margin-bottom: 5rem;
+
+		/* @media screen and (max-width: 960px) {
+			font-size: 6rem;
+		}
+		@media screen and (max-width: 710px) {
+			font-size: 5rem;
+		}
+		@media screen and (max-width: 610px) {
+			font-size: 5rem;
+		} */
+
 	}
 
 	time, #author, #footer {
