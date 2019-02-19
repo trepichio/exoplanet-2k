@@ -136,6 +136,14 @@ article {
 			border-radius: 50%;
 			border: 6px solid #000;
 			margin-left: 10rem;
+
+			@media screen and (max-width: $res-mobile-L) {
+				display: block;
+				width: 100%;
+				margin: 2rem auto;
+				float: none;
+			} 
+
 		}
 	}
 
