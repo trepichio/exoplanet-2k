@@ -65,6 +65,7 @@ abbr {
 article {
 	background-color: #222;
 	width: 80%;
+	max-width: res-laptop-L;
 	margin: 0 auto;
 	border: 2px groove #222; // TODO: review this border
 	padding: 1rem 3rem 5rem;
