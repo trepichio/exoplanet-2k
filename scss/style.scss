@@ -1,0 +1,94 @@
+@import url('../assets/fonts/Moon20/Moon20Font.css');
+@import url('../assets/fonts/Avenir/AvenirFont.css');
+@import 'helper/variables';
+
+html {
+	box-sizing: border-box;
+	font-size: 62.5%;
+	margin: 0;
+	padding: 0;
+}
+
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+
+body {
+	font-size: 1.5rem;
+	font-family: nth($font-Avenir-list, 1), Arial, sans-serif;
+	color: #fff;
+	background-color: #000;
+} 
+
+a {
+	text-decoration: underline;
+	text-underline-position: under;
+	text-decoration-style: dashed;
+	color: #fff;
+}
+
+@for $i from 1 through 6 {
+	h#{$i} {
+		font-family: 'Moon 2.0', sans-serif;
+		font-weight: normal;
+		text-transform: uppercase;
+		word-spacing: -1rem;
+	}
+}
+
+.right {
+	float: right;
+}
+
+.circular {
+	shape-outside: circle();
+}
+
+abbr {
+	text-decoration: none;
+	font-style: italic;
+}
+
+article {
+	background-color: #222;
+	width: 80%;
+	margin: 0 auto;
+	border: 2px groove #222; // TODO: review this border
+	padding: 1rem 3rem 5rem;
+
+	h1.main-heading {
+		text-transform: uppercase;
+		text-align: center;
+		font-size: 7rem;
+		font-weight: normal;
+		margin: 0;
+		margin-bottom: 5rem;
+	}
+
+	time, #author, #footer {
+		font-size: small;
+	}
+
+	h1 {
+		font-size: 4rem;
+	}
+
+	p {
+		line-height: 1.5;
+	}
+
+	ul {
+		line-height: 1.5;
+	}
+
+	img {
+		width: 100%;
+
+		&.circular {
+			width: 50%;
+			border-radius: 50%;
+			border: 6px solid #000;
+		}
+	}
+
+}
